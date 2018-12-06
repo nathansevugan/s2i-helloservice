@@ -1,4 +1,4 @@
-su root
+#!/bin/bash -e
 echo "---> Installing application source"
 
 echo "---> contents of /tmp/src"
@@ -10,4 +10,3 @@ cp -Rf /tmp/src/. /app
 echo "---> contents of /app"
 ls /app/
 
-chmod 775 start.sh

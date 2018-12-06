@@ -3,7 +3,7 @@ import os
 from flask import Flask
 app = Flask(__name__)
 greeting = 'hello'
-message = 'Rajesh Sarakinti'
+message = 'world'
 
 
 @app.route("/")

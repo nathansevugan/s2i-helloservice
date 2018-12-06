@@ -1,0 +1,7 @@
+#!/bin/bash -e
+echo "----> listing contents of folder"
+ls
+echo "----> listing python version"
+python --version
+echo "----> running command"
+exec python /app/helloservice.py

@@ -7,6 +7,8 @@ LABEL io.k8s.description="Platform for running python applications" \
       io.openshift.expose-services="5000:http" \
       io.openshift.tags="builder,html,flask"
 
+ENV http_proxy http://sg0501095:4Garuda*1973@www-ad-proxy.sabre.com:80
+ENV https_proxy http://sg0501095:4Garuda*1973@www-ad-proxy.sabre.com:80
 
 USER root
 #RUN apt-get update -y
@@ -16,7 +18,7 @@ WORKDIR /app
 
 # install flask
 RUN python --version
-RUN pip install Flask
+#RUN pip install Flask
 
 # Although this is defined in openshift/base-centos7 image it's repeated here
 # to make it clear why the following COPY operation is happening

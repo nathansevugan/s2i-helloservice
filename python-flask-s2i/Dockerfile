@@ -7,8 +7,8 @@ LABEL io.k8s.description="Platform for running python applications" \
       io.openshift.expose-services="5000:http" \
       io.openshift.tags="builder,html,flask"
 
-ENV http_proxy http://sg0501095:4Garuda*1973@www-ad-proxy.sabre.com:80
-ENV https_proxy http://sg0501095:4Garuda*1973@www-ad-proxy.sabre.com:80
+# ENV http_proxy ######
+# ENV https_proxy #####
 
 USER root
 #RUN apt-get update -y
